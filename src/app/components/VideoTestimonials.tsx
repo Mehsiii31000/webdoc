@@ -13,12 +13,12 @@ export function VideoTestimonials() {
     },
     {
       id: 2,
-      name: 'jsp',
-      age: 'jsp',
-      field: 'jsp',
-      city: 'jsp',
-      videoUrl: '/interview-jsp.mp4',
-      thumbnail: '/jsp.png',
+      name: 'Samy Massri',
+      age: 19,
+      field: 'BTS SIO',
+      city: 'Toulouse',
+      videoUrl: '/interview-samy.mp4',
+      thumbnail: '/samy.png',
     }
   ];
 
@@ -53,11 +53,12 @@ export function VideoTestimonials() {
             >
               {/* Video Container */}
 <div className="relative aspect-video bg-black">
-  <video
-    src={testimonial.videoUrl}
-    poster={testimonial.thumbnail}
-    controls
-    className="w-full h-full object-cover"
+  <iframe
+    src="https://www.youtube.com/embed/oyPLDLEz5y0"
+    title={`Témoignage de ${testimonial.name}`}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    className="w-full h-full"
   />
 </div>
 
